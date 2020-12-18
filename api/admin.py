@@ -4,6 +4,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from .models.user import User
 from .models.mango import Mango
 
+
 class UserAdmin(BaseUserAdmin):
     ordering = ['id']
     list_display = ['id', 'email', 'is_superuser', 'last_login']
