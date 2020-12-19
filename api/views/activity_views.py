@@ -5,7 +5,7 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404
 
 from ..models.activity import Activity
-from ..serializers import ActivitySerializer, ActivityLogSerializer
+from ..serializers import ActivitySerializer
 
 # Create your views here.
 class Activities(APIView):

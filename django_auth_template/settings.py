@@ -25,7 +25,7 @@ if os.getenv('ENV') == 'development':
   DB_NAME = os.getenv('DB_NAME_DEV')
   DB = {
       'ENGINE': 'django.db.backends.postgresql',
-      'NAME': 'django-auth-capstone',
+      'NAME': DB_NAME,
       # 'USER': 'postgres',
       # 'PASSWORD': 'your password'
   }
@@ -91,7 +91,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'django_auth_capstone.urls'
+ROOT_URLCONF = 'django_auth_template.urls'
 
 TEMPLATES = [
     {
@@ -109,7 +109,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'django_auth_capstone.wsgi.application'
+WSGI_APPLICATION = 'django_auth_template.wsgi.application'
 
 # Django Rest Framework
 #
