@@ -2,7 +2,7 @@
 
 # Django Auth Template
 
-This template contains a project, `django_auth_template`, and an app, `api`,
+This template contains a project, `django_auth_capstone`, and an app, `api`,
 which are set up complete with user authentication and an example resource,
 `Mango`, which has an example user ownership implementation.
 
@@ -26,7 +26,7 @@ which are set up complete with user authentication and an example resource,
     1. Type `psql` to get into interactive shell.
     2. Run `CREATE DATABASE "project_db_name";` where `project_db_name` is the name you want for your database.
 1. Add the database name to the `.env` file using the key `DB_NAME_DEV`.
-1. Replace all instances of `django_auth_template` with your application name. **This includes the folder included in this repository.**
+1. Replace all instances of `django_auth_capstone` with your application name. **This includes the folder included in this repository.**
 2. Generate a secret key using [this tool](https://djecrety.ir) and add it to the `.env` file using the key `SECRET`.
 1. Open the repository in Atom with `atom .`
 
@@ -44,7 +44,7 @@ SECRET=secret_key
 
 ## Structure
 
-This template includes a project `django_auth_template` which should be renamed
+This template includes a project `django_auth_capstone` which should be renamed
 as part of the set-up steps. It includes the `settings.py` file with special
 settings to be able to run both locally and on production. **DO NOT ADD A NEW
 OR MODIFY THE CURRENT `DATABASES` DEFINITION UNLESS INSTRUCTED TO DO SO.**
@@ -67,7 +67,7 @@ Commands are run with the syntax `python3 manage.py <command>`:
 ## Deployment
 
 Before deploying, make sure you have renamed your project folder and replaced
-all instances of `django_auth_template` with your app's name.
+all instances of `django_auth_capstone` with your app's name.
 
 Once ready, you can follow the steps in the [django-heroku-deployment-guide](https://git.generalassemb.ly/ga-wdi-boston/django-heroku-deployment-guide).
 
