@@ -91,7 +91,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'django_auth_template.urls'
+ROOT_URLCONF = 'django_auth_capstone.urls'
 
 TEMPLATES = [
     {
@@ -109,7 +109,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'django_auth_template.wsgi.application'
+WSGI_APPLICATION = 'django_auth_capstone.wsgi.application'
 
 # Django Rest Framework
 #
