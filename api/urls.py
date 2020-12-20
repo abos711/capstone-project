@@ -11,8 +11,8 @@ urlpatterns = [
     #
     # path('parents', Parents.as_view(), name='parents'),
     # path('parents/<int:pk>', ParentDetail.as_view(), name='parent_detail'),
-    path('activities', Activities.as_view(), name='activities'),
-    path('activities/<int:pk>', ActivityDetail.as_view(), name='activity_detail'),
+    path('activities/', Activities.as_view(), name='activities'),
+    path('activities/<int:pk>/', ActivityDetail.as_view(), name='activity_detail'),
     path('sign-up/', SignUp.as_view(), name='sign-up'),
     path('sign-in/', SignIn.as_view(), name='sign-in'),
     path('sign-out/', SignOut.as_view(), name='sign-out'),

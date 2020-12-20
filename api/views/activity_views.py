@@ -3,7 +3,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from django.shortcuts import get_object_or_404
+# from django.http import JsonResponse
 
+# .activity or just models
 from ..models.activity import Activity
 from ..serializers import ActivitySerializer
 
@@ -15,7 +17,7 @@ class Activities(APIView):
         activities = Activity.objects.all()[:10]
         data = ActivitySerializer(activities, many=True).data
         return Response(data)
-
+# double check to see if necessary
     serializer_class = ActivitySerializer
     def post(self, request):
         """Post request"""
