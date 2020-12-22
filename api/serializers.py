@@ -1,22 +1,21 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 
-from .models.mango import Mango
+# from .models.mango import Mango
 # from .models.parent import Parent
 from .models.activity import Activity
 from .models.user import User
 
-class MangoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Mango
-        fields = ('id', 'name', 'color', 'ripe', 'owner')
+# class MangoSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Mango
+#         fields = ('id', 'name', 'color', 'ripe', 'owner')
 
-        # add activity class with fields
+  # add activity class with fields
 class ActivitySerializer(serializers.ModelSerializer):
     class Meta:
       model = Activity
-            # does it matter to specify or include all
-      fields = ('id', 'activity', 'description', 'note', 'owner')
+      fields = ('id', 'activity', 'description', 'note', 'created_at', 'owner')
 
 # class ActivityLogSerializer(ActivitySerializer):
 #     parent = serializers.StringRelatedField()
