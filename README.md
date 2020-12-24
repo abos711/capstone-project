@@ -1,4 +1,5 @@
 
+
 Links:
 
 API REPO:
@@ -44,4 +45,8 @@ List of Technologies Used:
 JavaScript, Python, Django, React, Heroku, GitHub
 
 Unsolved Problems:
+<<<<<<< HEAD
 Styling, Updated/Delete CRUD, Deployment
+=======
+Styling, Updated/Delete CRUD, Deployment
+>>>>>>> 1cd59ed301c7c6bb10227cf681a6d9a2aa0c2f8b
