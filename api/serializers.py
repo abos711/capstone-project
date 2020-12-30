@@ -15,7 +15,7 @@ from .models.user import User
 class ActivitySerializer(serializers.ModelSerializer):
     class Meta:
       model = Activity
-      fields = ('id', 'activity', 'description', 'note', 'created_at', 'owner')
+      fields = ('id', 'name', 'activity', 'description', 'note', 'created_at', 'owner')
 
 # class ActivityLogSerializer(ActivitySerializer):
 #     parent = serializers.StringRelatedField()
