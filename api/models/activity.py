@@ -13,8 +13,6 @@ class Activity(models.Model):
     owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     # parent_id = models.ForeignKey('Parent', related_name='activities', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
 
     def __str__(self):
         return f"{self.name} had a {self.activity} at {self.created_at}"
@@ -27,6 +25,5 @@ class Activity(models.Model):
         'activity': self.activity,
         'description': self.description,
         'note': self.note,
-        'created_at': self.created_at,
-        'updated_at': self.updated_at
+        'created_at': self.created_at
     }
